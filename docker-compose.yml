@@ -1,0 +1,7 @@
+version: '3.5'
+services:
+  parsedmarc:
+    build: ./parsedmarc/
+    command: parsedmarc -c /parsedmarc.ini
+    restart: on-failure
+
